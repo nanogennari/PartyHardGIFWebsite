@@ -1,4 +1,5 @@
-config = [
+<?php
+$config = array(
   "siteName" => "PARTY HARD GIF!!!!!!!!!!!!!!!!!!!!!!!!!",
   "imagesFolder" => "./images",
   "topRight" => "
@@ -29,4 +30,5 @@ config = [
       js.src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=279003092136694';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>",
-]
+);
+?>

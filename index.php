@@ -1,4 +1,5 @@
 <?php # Developed by nano gennari
+include('config.php');
 if (isset($_GET['image'])) {
     $randomImage = './images/'.$_GET['image'];
 } else {
