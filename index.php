@@ -26,9 +26,7 @@ include('htmls.php')
 <head>
 <title><?php echo($config['siteName']); ?></title>
 <style>
-.back {
-   background-image:url(<?php echo($randomImage); ?>);
-}
+  .back { background-image:url(<?php echo($randomImage); ?>);}
 </style>
 <link href='style.css' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
