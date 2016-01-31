@@ -29,7 +29,7 @@ $randomImage = $images[array_rand($images)];
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class='main'></div>
+<div class='back'></div>
 <div class='bottomleft'>
 	<!--FB Button-->
 	<div class="fb-like" data-href="https://partyhard.online/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div></br>
