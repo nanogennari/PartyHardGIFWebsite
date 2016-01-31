@@ -1,12 +1,13 @@
 <?php # Developed by nano gennari
-if (isset($_GET['image'])) {
-    $randomImage = $config['imagesFolder'].$_GET['image'];
-} else {
-$images = glob($config['imagesFolder'] . '*.'.$config['imagesFileType'], GLOB_BRACE);
-$randomImage = $images[array_rand($images)];
-$imageName = substr($randomImage,strlen($config['imagesFolder']))
-}
 include('config.php');
+if (isset($_GET['image'])) {
+    $randomImage = $config["imagesFolder"].$_GET['image'];
+} else {
+  $images = glob($config["imagesFolder"].'*.'.$config["imagesFileType"], GLOB_BRACE);
+  $randomImage = $images[array_rand($images)];
+  $imageName = substr($randomImage,strlen($config['imagesFolder']));
+}
+include('htmls.php')
 ?>
 <!DOCTYPE html>
 <head>
@@ -23,9 +24,9 @@ include('config.php');
 <body>
   <?php echo($config['body']); ?>
   <div class='back'></div>
-  <div class='topleft'><?php echo($config['topLeft']); ?></div>
-  <div class='topright'><?php echo($config['topRight']); ?></div>
-  <div class='bottomleft'><?php echo($config['bottomLeft']); ?></div>
-  <div class='bottomright'><?php echo($config['bottomRight']); ?></div>
+  <div class='topleft'><?php echo($htmls['topLeft']); ?></div>
+  <div class='topright'><?php echo($htmls['topRight']); ?></div>
+  <div class='bottomleft'><?php echo($htmls['bottomLeft']); ?></div>
+  <div class='bottomright'><?php echo($htmls['bottomRight']); ?></div>
 </body>
 </html>
