@@ -1,12 +1,12 @@
 <?php # Developed by nano gennari
-include('config.php');
 if (isset($_GET['image'])) {
-    $randomImage = './images/'.$_GET['image'];
+    $randomImage = $config['imagesFolder'].$_GET['image'];
 } else {
-$imagesDir = './images/';
-$images = glob($imagesDir . '*.gif', GLOB_BRACE);
+$images = glob($config['imagesFolder'] . '*.'.$config['imagesFileType'], GLOB_BRACE);
 $randomImage = $images[array_rand($images)];
+$imageName = substr($randomImage,strlen($config['imagesFolder']))
 }
+include('config.php');
 ?>
 <!DOCTYPE html>
 <head>

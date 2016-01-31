@@ -2,10 +2,11 @@
 $config = array(
   "siteName" => "PARTY HARD GIF!!!!!!!!!!!!!!!!!!!!!!!!!",
   "imagesFolder" => "./images",
+  'imagesFileType' => "gif",
   "topRight" => "
       <input type='checkbox' onclick='toggleAutoRefresh(this);' id='reloadCB'> Auto Change</br>
       <A HREF='javascript:reload()'>Change GIF NOW!</A></br>
-      <a href='http://partyhard.online/?image=<?php echo(substr($randomImage,9)); ?>'>Link to this</a>
+      <a href='http://partyhard.online/?image=."substr($randomImage,9)"'>Link to this</a>
       ",
   "topLeft" => "
       Desenvolvido na <a href='https://twitter.com/hashtag/CPBR9' target='_blank'>#CPBR9</a>
