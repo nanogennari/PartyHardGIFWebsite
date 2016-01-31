@@ -1,0 +1,65 @@
+body {
+    overflow:hidden;
+}
+div {
+   font-family: 'Oswald', sans-serif;
+   text-shadow: 2px 2px #000000;
+   margin: 0px;
+   padding: 0 2px 0 0;
+   right: 10px;
+   position: absolute;
+   overflow:hidden;
+   color: white;
+   left:0;
+   font-size: 9pt;
+}
+div:hover {
+   opacity: 1;
+}
+.back {
+   background-repeat:no-repeat;
+   background-size: 100% 100%;
+   width: 100%;
+   height: 100%;
+   margin:0;
+   top:0;
+   left:0;
+   z-index: -1;
+   position: absolute;
+   overflow:hidden;
+}
+.topleft {
+   text-align: left;
+   top: 10px;
+   left: 10px;
+   right: auto;
+   opacity: 0.3;
+}
+.topright {
+   text-align: right;
+   top: 10px;
+   right: 10px;
+   left: auto;
+   opacity: 0.3;
+}
+.bottomleft {
+   text-align: left;
+   bottom:10px;
+   left: 10px;
+   right: auto;
+   opacity: 0.3;
+}
+.bottomright {
+   text-align: right;
+   bottom:10px;
+   right: 10px;
+   left: auto;
+   opacity: 0.3;
+}
+a, a:hover, a:active, a:visited {
+   color: white;
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: underline;
+}
