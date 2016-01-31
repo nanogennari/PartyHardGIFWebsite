@@ -24,7 +24,7 @@ div:hover {
    margin:0;
    top:0;
    left:0;
-   z-index: -1;
+   z-index: 1;
    position: absolute;
    overflow:hidden;
 }
@@ -34,6 +34,7 @@ div:hover {
    left: 10px;
    right: auto;
    opacity: 0.3;
+   z-index: 2;
 }
 .topright {
    text-align: right;
@@ -41,6 +42,7 @@ div:hover {
    right: 10px;
    left: auto;
    opacity: 0.3;
+   z-index: 2;
 }
 .bottomleft {
    text-align: left;
@@ -48,6 +50,7 @@ div:hover {
    left: 10px;
    right: auto;
    opacity: 0.3;
+   z-index: 2;
 }
 .bottomright {
    text-align: right;
@@ -55,6 +58,7 @@ div:hover {
    right: 10px;
    left: auto;
    opacity: 0.3;
+   z-index: 2;
 }
 a, a:hover, a:active, a:visited {
    color: white;
